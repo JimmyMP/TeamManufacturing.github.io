@@ -1,0 +1,457 @@
+<!--html:5 para más rapido-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Pagina donde conectaremos la pagina de iconos con el codigo html-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Team Manufacturing</title>
+    <!--CONECTAR LA CARPETA STYLE.CSS CON EL HTML-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO-->
+    <!-- abreviatura: div.contenedor-header-->    
+    <div class="contenedor-header">
+        <header>
+            <!--División del logo-->
+            <div class="logo">
+                <!--Url modificada, esto irá al final del URL original-->
+                <a href="#">TM</a>
+            </div>
+            <!--Modificaciones del URL original de navegación-->
+            <nav id="nav">
+                <ul>
+                    <!--Separacion de contenido de la pagina web-->
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#integrantes" onclick="seleccionar()">INTEGRANTES</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE NOSOTROS</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <!--Menú adaptable-->
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <!--Icono de la pagina que hemos conectado-->
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </header>
+    </div>
+    <!--SECCION INICIO-->
+    <!--Abreviacion para que se escriba rapido
+        section#inicio.inicio -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-seccion">
+            <h1>TEAM MANUFACTURING</h1>
+            <h2>Grupo de estudiantes de Ingenieria de Sistemas</h2>
+        </div>
+    </section>
+
+    <!--SECCION INTEGRANTES-->
+    <!--Abreviacion para que se escriba rapido
+        section#integrantes.integrantes -->
+    <section id="integrantes" class="integrantes">
+        <!--Banner-->
+        <!--Abreviacion para que se escriba rapido
+        div.contenido-banner -->
+        <h1>INTEGRANTES</h1>
+        <!--C U Y A T E-->
+        <div class="contenido-banner">
+            <!--Imagen de la persona-->
+            <div class="contenedor-img">
+                <img src="images/foto carnet.jpeg" alt="">
+            </div>
+            <!--Lo que irá abajo de la imagen h1=linea1-->
+            <h2>BRAYAN CUYATE</h2>
+            <h3>Freelancer - Analista de Datos</h3>
+            <!--Divisioón para las redes sociales-->
+            <div class="redes">
+                <!--href="#" es para que al dar click se quede en la pagina con #-->
+                <a href="https://www.facebook.com/brayanalexis.cuyatemimbela/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/brayan-cuyate-mimbela-1a907b232/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <button>
+                <a href="https://jimmymp.github.io/#inicio" target="_blank">Ir a Portafolio <i class="fa-solid fa-paper-plane"></i></a>
+                <span class="overlay"></span>
+            </button>
+            <button>
+                <a download="CV" href="CV/CV-Cuyate.pdf" target="_blank">Descargar CV <i class="fa-solid fa-download"></i></a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+        <!--S O L O R Z A N O-->
+        <div class="contenido-banner">
+            <!--Imagen de la persona-->
+            <div class="contenedor-img">
+                <img src="images/incognito.jpeg" alt="">
+            </div>
+            <!--Lo que irá abajo de la imagen h1=linea1-->
+            <h2>MATEO SOLORZANO</h2>
+            <h3>Estudiante Ingenieria de Sistemas - UNI</h3>
+            <!--Divisioón para las redes sociales-->
+            <div class="redes">
+                <!--href="#" es para que al dar click se quede en la pagina con #-->
+                <a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <button>
+                <a href="" target="_blank">Ir a Portafolio <i class="fa-solid fa-paper-plane"></i></a>
+                <span class="overlay"></span>
+            </button>
+            <button>
+                Descargar CV  <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+        <!--S A L A Z A R-->
+        <div class="contenido-banner">
+            <!--Imagen de la persona-->
+            <div class="contenedor-img">
+                <img src="images/incognito.jpeg" alt="">
+            </div>
+            <!--Lo que irá abajo de la imagen h1=linea1-->
+            <h2>CESAR SALAZAR</h2>
+            <h3>Estudiante Ingenieria de Sistemas - UNI</h3>
+            <!--Divisioón para las redes sociales-->
+            <div class="redes">
+                <!--href="#" es para que al dar click se quede en la pagina con #-->
+                <a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <button>
+                <a href="" target="_blank">Ir a Portafolio <i class="fa-solid fa-paper-plane"></i></a>
+                <span class="overlay"></span>
+            </button>
+            <button>
+                Descargar CV  <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+        <!--M E J I A-->
+        <div class="contenido-banner">
+            <!--Imagen de la persona-->
+            <div class="contenedor-img">
+                <img src="images/incognito.jpeg" alt="">
+            </div>
+            <!--Lo que irá abajo de la imagen h1=linea1-->
+            <h2>CRISTIAN MEJIA</h2>
+            <h3>Estudiante Ingenieria de Sistemas - UNI</h3>
+            <!--Divisioón para las redes sociales-->
+            <div class="redes">
+                <!--href="#" es para que al dar click se quede en la pagina con #-->
+                <a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <button>
+                <a href="" target="_blank">Ir a Portafolio <i class="fa-solid fa-paper-plane"></i></a>
+                <span class="overlay"></span>
+            </button>
+            <button>
+                Descargar CV  <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+        <!--M A T O S-->
+        <div class="contenido-banner">
+            <!--Imagen de la persona-->
+            <div class="contenedor-img">
+                <img src="images/incognito.jpeg" alt="">
+            </div>
+            <!--Lo que irá abajo de la imagen h1=linea1-->
+            <h2>SEBASTIAN MATOS</h2>
+            <h3>Estudiante Ingenieria de Sistemas - UNI</h3>
+            <!--Divisioón para las redes sociales-->
+            <div class="redes">
+                <!--href="#" es para que al dar click se quede en la pagina con #-->
+                <a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <button>
+                <a href="" target="_blank">Ir a Portafolio <i class="fa-solid fa-paper-plane"></i></a>
+                <span class="overlay"></span>
+            </button>
+            <button>
+                Descargar CV  <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+        
+        <!--S O T E L O-->
+        <div class="contenido-banner">
+            <!--Imagen de la persona-->
+            <div class="contenedor-img">
+                <img src="images/incognito.jpeg" alt="">
+            </div>
+            <!--Lo que irá abajo de la imagen h1=linea1-->
+            <h2>DIEGO SOTELO</h2>
+            <h3>Estudiante Ingenieria de Sistemas - UNI</h3>
+            <!--Divisioón para las redes sociales-->
+            <div class="redes">
+                <!--href="#" es para que al dar click se quede en la pagina con #-->
+                <a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <button>
+                <a href="" target="_blank">Ir a Portafolio <i class="fa-solid fa-paper-plane"></i></a>
+                <span class="overlay"></span>
+            </button>
+            <button>
+                Descargar CV  <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+        <!--Z A N A B R I A-->
+        <div class="contenido-banner">
+            <!--Imagen de la persona-->
+            <div class="contenedor-img">
+                <img src="images/incognito.jpeg" alt="">
+            </div>
+            <!--Lo que irá abajo de la imagen h1=linea1-->
+            <h2>DANIEL ZANABRIA</h2>
+            <h3>Estudiante Ingenieria de Sistemas - UNI</h3>
+            <!--Divisioón para las redes sociales-->
+            <div class="redes">
+                <!--href="#" es para que al dar click se quede en la pagina con #-->
+                <a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <button>
+                <a href="" target="_blank">Ir a Portafolio <i class="fa-solid fa-paper-plane"></i></a>
+                <span class="overlay"></span>
+            </button>
+            <button>
+                Descargar CV  <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+        <!--R O B E R T O-->
+        <div class="contenido-banner">
+            <!--Imagen de la persona-->
+            <div class="contenedor-img">
+                <img src="images/incognito.jpeg" alt="">
+            </div>
+            <!--Lo que irá abajo de la imagen h1=linea1-->
+            <h2>ROBERTO FLORES</h2>
+            <h3>Estudiante Ingenieria de Sistemas - UNI</h3>
+            <!--Divisioón para las redes sociales-->
+            <div class="redes">
+                <!--href="#" es para que al dar click se quede en la pagina con #-->
+                <a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <button>
+                <a href="" target="_blank">Ir a Portafolio <i class="fa-solid fa-paper-plane"></i></a>
+                <span class="overlay"></span>
+            </button>
+            <button>
+                Descargar CV  <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!--SECCION SOBRE MI-->
+    <!--Abreviacion para que se escriba rapido
+        section#sobremi.sobremi -->
+    <section id="sobremi" class="sobremi">
+        <!--Abreviacion para que se escriba rapido
+        div.contenido-seccion -->
+        <div class="contenido-seccion">
+            <h2>Sobre Nosotros</h2>
+            <p><span>Hola, somos el grupo Team Manufacturing.</span> Conformado por estudiantes de la Universidad Nacional de Ingenieria, que está cursando el 5to ciclo 
+                con altas expectativas de mejorar, nuestra meta es porder brindarles las diferentes ramas de la Ingenieria de Sistemas, pertenecemos al quinto superior de nuestra carrera,
+                con altas habilidades sociales. Puede contactar personalmente con cada uno, en sus portafolios, o directamente al final un contacto general.
+            <div class="fila">
+                <!--Datos Personales-->
+                <div class="col">
+                    <h3>Datos</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfono</strong>
+                            948112816
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            TeamManufacturing@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.TeamManufacturing.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Av. Túpac Amaru 210, Rímac Lima, Perú
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Estudiantes</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="intereses">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>VIDEOJUEGOS</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-headset"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJES</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Boton para descargar CV
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>-->
+        </div>
+    </section>
+
+    <!--SECCION PORTAFOLIO-->
+        <!--Abreviacion para que se escriba rapido
+        section#portafolio.portafolio -->
+    <section id="portafolio" class="portafolio">
+            <div class="contenido-seccion">
+                <h2>PORTAFOLIO</h2>
+                <div class="galeria">
+                    <div class="proyecto">
+                        <img src="images/p1.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografia</p>
+                        </div>
+                    </div>
+
+                    <div class="proyecto">
+                        <img src="images/p2.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografia</p>
+                        </div>
+                    </div>
+
+                    <div class="proyecto">
+                        <img src="images/p3.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografia</p>
+                        </div>
+                    </div>
+
+                    <div class="proyecto">
+                        <img src="images/p4.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografia</p>
+                        </div>
+                    </div>
+
+                    <div class="proyecto">
+                        <img src="images/p5.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografia</p>
+                        </div>
+                    </div>
+
+                    <div class="proyecto">
+                        <img src="images/p6.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+    <!--SECCION CONTACTO-->
+        <!--Abreviacion para que se escriba rapido
+        section#contacto.contacto -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!--Formulario-->
+                <div class="col">
+                    <input type="text" placeholder="Tú nombre">
+                    <input type="text" placeholder="Número telefonico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!--Mapa-->
+                <div class="col">
+                    <img src="images/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Av. Túpac Amaru 210, Rímac Lima, Perú
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 948112816
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: TeamManufacturing@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECCION FOOTER(PIE DE PAGINA)-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="copyright">
+            <p>
+                © Copyright 2023 TeamManufacturing //  Hosted by 
+            </p>
+            <a href="https://www.uni.edu.pe/" target="_blank">Universidad Nacional de Ingenieria</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
